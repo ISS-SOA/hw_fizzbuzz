@@ -42,7 +42,7 @@ Here are some test cases and sample outputs:
 To run automated tests on your code, you may do the following from command line, in the directory with all the files:
 ```
 $ bundle install
-(only need to run this once; bundle should report sucess)
+(only need to run this once; bundle should report success)
 
 $ ruby fizzbuzz_spec.rb
 Run options: --seed 13291
