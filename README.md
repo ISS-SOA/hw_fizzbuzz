@@ -4,7 +4,7 @@
 
 ---
 
-*The basic Fizz buzz problem is a very popular interview question for programming jobs, to weed out novices.  The problem seems quite easy, but it can confuse programmers who try to overthink it.*
+*The basic Fizz buzz problem is a very popular interview question for programming jobs, to weed out novices.  The problem seems quite easy, but it can confuse programmers who try to overthink it. Take a look at [what the founder of StackOverflow had to say about this game](https://blog.codinghorror.com/why-cant-programmers-program/).*
 
 
 Fizz buzz is a simple children’s game where everyone sits in a circle, and each person takes a turn saying numbers in increasing order. The rules are:
