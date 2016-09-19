@@ -16,4 +16,9 @@ describe 'Fizz buzz tests' do
     result.must_equal FIZZBUZZ_30[0..19]
     str.must_equal(FIZZBUZZ_30[0..19].map(&:to_s).join('-') + '-')
   end
+
+  it 'should return Fixnum types for integers' do
+    result = fizzbuzz(5).select { |item| item.is_a? Fixnum }
+    result.must_equal [1, 2, 4]
+  end
 end
