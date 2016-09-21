@@ -3,10 +3,13 @@
 
 # frozen_string_literal: true
 
-def divided_by?(divisor)
-  -> (dividend) { (dividend % divisor).zero? }
+def fizzbuzz(count, &block)
+  sequence = (1..count).map { |turn| fizzbuzzify(turn) }
+  sequence.each(&block) if block
+  sequence
 end
 
+# utilities
 def fizzbuzzify(turn)
   case turn
   when divided_by?(15) then 'FizzBuzz'
@@ -16,8 +19,6 @@ def fizzbuzzify(turn)
   end
 end
 
-def fizzbuzz(count, &block)
-  sequence = (1..count).map { |turn| fizzbuzzify(turn) }
-  sequence.each(&block) if block
-  sequence
+def divided_by?(divisor)
+  -> (dividend) { (dividend % divisor).zero? }
 end
