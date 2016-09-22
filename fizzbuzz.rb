@@ -12,13 +12,15 @@ end
 # utilities
 def fizzbuzzify(turn)
   case turn
-  when divisible_by?(15) then 'FizzBuzz'
-  when divisible_by?(5)  then 'Buzz'
-  when divisible_by?(3)  then 'Fizz'
+  when divisible_by?(3, 5) then 'FizzBuzz'
+  when divisible_by?(3)    then 'Fizz'
+  when divisible_by?(5)    then 'Buzz'
   else turn
   end
 end
 
-def divisible_by?(divisor)
-  -> (dividend) { (dividend % divisor).zero? }
+def divisible_by?(*divisors)
+  lambda do |dividend|
+    divisors.map { |divisor| (dividend % divisor).zero? }.all?
+  end
 end
