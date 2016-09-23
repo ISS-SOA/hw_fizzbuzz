@@ -1,3 +1,4 @@
+# rubocop: disable Style/FrozenStringLiteralComment
 require 'minitest/autorun'
 require './fizzbuzz'
 
