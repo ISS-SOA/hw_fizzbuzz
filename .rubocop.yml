@@ -1,0 +1,13 @@
+AllCops:
+  TargetRubyVersion: 2.3
+  Exclude:
+    - 'Gemfile'
+
+Documentation:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+TrailingBlankLines:
+  Enabled: true
