@@ -18,7 +18,7 @@ describe 'Fizz buzz tests' do
   end
 
   it 'should return Fixnum types for integers' do
-    result = fizzbuzz(5).select { |item| item.is_a? Fixnum }
+    result = fizzbuzz(5).select { |item| item.is_a? Integer }
     result.must_equal [1, 2, 4]
   end
 end

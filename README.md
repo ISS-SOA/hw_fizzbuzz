@@ -19,16 +19,20 @@ So the game creates a sequence that looks like this:
 
 `1, 2, "Fizz", 4, "Buzz", "Fizz", 7, 8, "Fizz", "Buzz", 11, "Fizz", 13, 14, "FizzBuzz", 16, 17, "Fizz", 19, ...`
 
+
+## 1. Fizzbuzz Function
 You must write a `fizzbuzz` method in Ruby that produces the items (numbers/words) of the Fizz buzz sequence. Your `fizzbuzz` method should take the following parameters:
 - `size` (number until which to generate the sequence)
 - optional block (to determine what to do with each item)
 
 and the method’s return value should be:
-- an array of Fizz buzz items upto the number specified; use numbers and strings as appropriate
+- an array of Fizz buzz items upto the number specified; use Integers and Strings as appropriate
+
+## 2. Try and Test
 
 Try writing a very simple version of the algorithm first, and make sure everything works.  Only make your code ‘clean’ (not ‘clever’) after you have got it working! Remember always that the code in our class is for other programmers to read.
 
-Here are some test cases and sample outputs:
+Here are some test cases and sample outputs that you can try in a REPL (like `irb`/`pry`):
 
 ```
 > fizzbuzz(5)
@@ -42,11 +46,22 @@ Here are some test cases and sample outputs:
 => [1, 2, 4]
 ```
 
-While coding, run automated tests on your code from command line, in the directory with all the files:
+Take a look at the tests written for you in `fizzbuzz_spec.rb`. While coding, run automated tests on your code from command line, in the directory with all the files:
 ```
 $ bundle install
 (only need to run this once; bundle should report success)
 
 $ ruby fizzbuzz_spec.rb
 ```
-You should see all tests pass if you have successfully finished your assignment.
+The tests should fail as you are developing your function. But you should see the tests start to pass while you are successfully developing this assignment.
+
+## 3. Coding Practices
+
+Let's put together all the good programming practices that we discussed in class:
+
+- **REPL**: Use `irb`/`pry` to try each step as you are coding
+- **Tests**: continuously test your code as you write it
+- **Idiomatic code**:
+  - “No more for loops!”: use functional idioms for iteration (map/reduce/select/each/etc.)
+  - make sure your code has no `rubocop` violations (ask us about any unusual violations)
+- **Readability**: ask others to review your code or suggest improvements – even publicly on our class Slack!
