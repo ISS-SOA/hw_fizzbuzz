@@ -20,16 +20,25 @@ This basic FizzBuzz problem is a very popular interview question for programming
 
 Either git clone this repo onto your machine, or download as a zip file (see 'Clone or download' button). *Do NOT fork this repo!*
 
-In your working folder, use the `bundle` command at the Unix shell to install all the necessary gems from the `Gemfile.lock` file:
+In your working folder, use `rbenv` to set the version of ruby for this project.
+
+```sh
+$ rbenv local #.#.#
+(where #.#.# should be the your latest installed ruby version)
+```
+
+Then,use the `bundle` command at the Unix shell to install all the necessary gems from the `Gemfile` file:
 
 ```sh
 $ bundle install
 (You only need to run this once; bundle should report success)
 ```
 
+A `Gemfile.lock` file should appear showing the installed gem versions
+
 ## 3. Running Tests
 
-Take a look at the tests written for you in `fizzbuzz_spec.rb`. Run the tests once before you start coding to confirm that all three tests fail!
+Take a look at the automated tests written for you in `fizzbuzz_spec.rb`. Run the tests once before you start coding to confirm that all three tests *fail*!
 
 ```sh
 $ ruby fizzbuzz_spec.rb
